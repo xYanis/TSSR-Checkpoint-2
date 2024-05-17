@@ -92,5 +92,13 @@ Q.3.16
 
 Q.3.17
 
-Le ICMP permet au routeur et ordinateur de s'informer sur le reseau
+Le protocole ICMP permet au routeur et ordinateur de s'informer sur le reseau
+
+Q.3.18
+
+Non, parce que l'hote n'as été trouvé
+
+Q.3.19
+
+Une communication entre 10.10.255.254 et 10.10.80.3 mais l'hote n'as pas été trouvé
  
