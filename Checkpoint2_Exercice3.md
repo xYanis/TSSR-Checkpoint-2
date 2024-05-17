@@ -75,7 +75,7 @@ Il donne la réponse ( Reply )
 
 Q.3.14
 
-C'est le protocole ARP qui est utilisé, il sert à mapper une adresse IP  à une adresse MAC . Dans ce cas, il s'agit d'une requête ARP pour déterminer l'adresse MAC associée à l'adresse IP 10.10.4.2.
+C'est le protocole ARP qui est utilisé, il sert à mapper une adresse IP  à une adresse MAC . Pour déterminer l'adresse MAC associée à l'adresse IP 10.10.4.2.
 
 Q.3.15
 
@@ -86,4 +86,11 @@ Matériel B Routeur :
 
 Rôle : Le routeur B n'a pas été impliqué directement dans cette communication spécifique, car tous les échanges dans cette capture se sont produits au sein du même sous-réseau (10.10.0.0/16). Le routeur B aurait été nécessaire si la communication devait se faire entre différents sous-réseaux ou avec des réseaux externes.
 
+Q.3.16
+
+10.10.80.3
+
+Q.3.17
+
+Le ICMP permet au routeur et ordinateur de s'informer sur le reseau
  
