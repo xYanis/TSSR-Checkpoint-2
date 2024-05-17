@@ -12,15 +12,15 @@
 #C'est pour ouvrir la fenêtre Windows en pleine écran lorsque le script est lancé
 
 #2.10
-Done
+#Done
 #2.12
-Done
+#Done
 #2.13
-Done
+#Done
 #2.14
-Done
+#Done
 #2.15
-Done
+#Done
 #2.16
 #Remplace toute les lettres en minuscule et remplace les accents par leur équivalant sans accent
 
