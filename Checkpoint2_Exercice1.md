@@ -74,14 +74,14 @@ Q.1.6
 
 Q.1.7 
 
-D'un point de sécurité l'IPV6 est plus sur que l'IPV4
+D'un point de sécurité l'IPV6 est plus sur que l'IPV4 et on peut se passer du DHCP
 
 
 Q.1.8
 
-Non il n'est pas obselète 
+Non il n'est pas obselète. 
 
-En intégrant le protocole IPV6 au serveur DHCP pour qu'il le prenne en charge
+En intégrant le protocole IPV6 le DHCP est optionnel.
 
 
 
