@@ -6,10 +6,20 @@
 # Le chemin n'est pas le bon C:\Temp\AddLocalUsers.ps1 est à remplacer
 
 #2.3
-#C'est l'équivalent PowerShell d'exucuter en tant qu'admnistrateur sur Windows
+#C'est l'équivalent PowerShell d'executer en tant qu'admnistrateur sur Windows
 
 #2.4
 #C'est pour ouvrir la fenêtre Windows en pleine écran lorsque le script est lancé
+
+#2.5
+
+#2.6
+
+#2.7
+
+#2.8
+
+#2.9
 
 #2.10
 #Done
