@@ -113,4 +113,4 @@ L'adresse MAC destination est CA:01:DA:D2:00:1C (B G1 )
 Les deux appareils en communication disposent d'adresses MAC et sont connectées sur les réseaux 10.10.0.0/16 et 172.16.5.0/24
 
 Q.3.23
-Cette comunnication ait eu lieu entre les deux routeurs B et R2.
+Cette comunnication a eu lieu entre les deux routeurs B et R2.
