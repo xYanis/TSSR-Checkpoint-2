@@ -79,16 +79,13 @@ C'est le protocole ARP qui est utilisé, il sert à mapper une adresse IP  à un
 
 Q.3.15
 
-
 Le switch A a relayé les paquets entre les différents PC sur le réseau local. Il a reçu les requêtes ARP et ICMP de PC1 et a transmis ces paquets au destinataire approprié, puis a relayé les réponses de PC4 à PC1.
 
-Matériel B Routeur :
-
-Rôle : Le routeur B n'a pas été impliqué directement dans cette communication spécifique, car tous les échanges dans cette capture se sont produits au sein du même sous-réseau (10.10.0.0/16). Le routeur B aurait été nécessaire si la communication devait se faire entre différents sous-réseaux ou avec des réseaux externes.
+Le routeur B n'a pas été impliqué directement dans cette communication spécifique, car tous les échanges dans cette capture se sont produits au sein du même sous-réseau (10.10.0.0/16). Le routeur B aurait été nécessaire si la communication devait se faire entre différents sous-réseaux ou avec des réseaux externes.
 
 Q.3.16
 
-10.10.80.3
+10.10.80.3, il s'agit du PC3
 
 Q.3.17
 
@@ -96,9 +93,22 @@ Le protocole ICMP permet au routeur et ordinateur de s'informer sur le reseau
 
 Q.3.18
 
-Non, parce que l'hote n'as été trouvé
+Non, parce que l'hote n'as été trouvé. PC2 et PC3 ne peuvent pas communiquer ensemble 
 
 Q.3.19
 
 Une communication entre 10.10.255.254 et 10.10.80.3 mais l'hote n'as pas été trouvé
- 
+
+ Q.3.20
+Le switch A a permis d'indiquer à PC3 d'etre relié au routeur B Le routeur B a reçu un paquet provenant de PC3, mais a indiqué une erreur car PC2 ne se situe pas sur sa table de routage.
+
+Q.3.21
+La source est un appareil possédant l'adresse IP 10.10.4.2, il s'agit de PC4 La destination est un appareil possédant l'adresse IP 172.16.5.253, situé sur le réseau 172.16.5.0/24, donc après le routeur R2
+
+Q.3.22
+L'adresse MAC source est CA:03:9E:EF:00:38 
+L'adresse MAC destination est CA:01:DA:D2:00:1C 
+Les deux appareils en communication disposent d'adresses MAC et sont connectées sur les réseaux 10.10.0.0/16 et 172.16.5.0/24
+
+Q.3.23
+Les deux appareils sont situés dans des réseaux séparés par deux routeurs, cette comunnication ait eu lieu entre les deux routeurs B et R2.
