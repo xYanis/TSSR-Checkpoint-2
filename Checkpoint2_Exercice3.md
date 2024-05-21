@@ -26,8 +26,8 @@ Q.3.6
 | Ordinateur | Adresse réseau    | Première adresse disponible | Dernière adresse disponible | Adresse Broadcast     |
 |------------|--------------------|-----------------------------|-----------------------------|-----------------------|
 | PC1        | 10.10.0.0/16       | 10.10.0.1/16                | 10.10.255.254/16            | 10.10.255.255/16      |
-| PC2        | 10.11.80.2/16      | 10.11.0.0/16                | 10.11.255.254/16            | 10.11.255.255/16      |
-| PC5        | 10.10.4.7/15       | 10.10.0.1/15                | 10.11.255.254/15            | 10.11.255.255/15      |
+| PC2        | 10.11.0.0/16      | 10.11.0.1/16                | 10.11.255.254/16            | 10.11.255.255/16      |
+| PC5        | 10.10.0.0/15       | 10.10.0.1/15                | 10.11.255.254/15            | 10.11.255.255/15      |
 
 Q.3.7
 
@@ -45,7 +45,7 @@ Q.3.9
 
  Q.3.10
 
- En passant par un serveur DHCP mais le PC devra passer sur le même réseaux que les autres 
+ En passant par un serveur DHCP qui redifinira les adresses IP de chaque PC
 
 
 Q.3.11
@@ -57,7 +57,7 @@ Nom du matériel : PC1 (Adresse IP : 10.10.4.1/16)
 Q.3.12
 
 Oui, la communication a réussi.
-Le PC1 qui fait des demandes pour le PC4
+Le PC1 qui fait des demandes pour le PC4 qui lui a répondu 
 
 
 Q.3.13
@@ -75,7 +75,7 @@ Il donne la réponse ( Reply )
 
 Q.3.14
 
-C'est le protocole ARP qui est utilisé, il sert à mapper une adresse IP  à une adresse MAC . Pour déterminer l'adresse MAC associée à l'adresse IP 10.10.4.2.
+C'est le protocole ARP qui est utilisé. Pour déterminer l'adresse MAC associée à l'adresse IP 10.10.4.2.
 
 Q.3.15
 
@@ -89,26 +89,28 @@ Q.3.16
 
 Q.3.17
 
-Le protocole ICMP permet au routeur et ordinateur de s'informer sur le reseau
+Le protocole ICMP (Internet Control Message Protocol) est un protocole de la couche réseau qui permet de gérer les informations relatives aux erreurs de communication du réseau
 
 Q.3.18
 
-Non, parce que l'hote n'as été trouvé. PC2 et PC3 ne peuvent pas communiquer ensemble 
+Non, parce que l'hote n'as été trouvé. PC2 et PC3 ne peuvent pas communiquer ensemble. Ils sont sur des réseaux différents 
 
 Q.3.19
 
-Une communication entre 10.10.255.254 et 10.10.80.3 mais l'hote n'as pas été trouvé
+Le paquet 2 cherche atteindre la destination 10.10.80.3 depuis la passerelle 10.10.255.254 mais elle n'est pas joignable 
 
  Q.3.20
-Le switch A a permis d'indiquer à PC3 d'etre relié au routeur B Le routeur B a reçu un paquet provenant de PC3, mais a indiqué une erreur car PC2 ne se situe pas sur sa table de routage.
+Le switch A a permis d'indiquer à PC3 d'etre relié au routeur B 
+Le routeur B a reçu un paquet provenant de PC3, mais a indiqué une erreur car PC2 ne se situe pas sur sa table de routage.
 
 Q.3.21
-La source est un appareil possédant l'adresse IP 10.10.4.2, il s'agit de PC4 La destination est un appareil possédant l'adresse IP 172.16.5.253, situé sur le réseau 172.16.5.0/24, donc après le routeur R2
+La source est un appareil possédant l'adresse IP 10.10.4.2, 
+Il s'agit de PC4 et la destination est l'adresse IP 172.16.5.253, situé sur le réseau 172.16.5.0/24
 
 Q.3.22
-L'adresse MAC source est CA:03:9E:EF:00:38 
-L'adresse MAC destination est CA:01:DA:D2:00:1C 
+L'adresse MAC source est CA:03:9E:EF:00:38 (R2 g2 )
+L'adresse MAC destination est CA:01:DA:D2:00:1C (B G1 )
 Les deux appareils en communication disposent d'adresses MAC et sont connectées sur les réseaux 10.10.0.0/16 et 172.16.5.0/24
 
 Q.3.23
-Les deux appareils sont situés dans des réseaux séparés par deux routeurs, cette comunnication ait eu lieu entre les deux routeurs B et R2.
+Cette comunnication ait eu lieu entre les deux routeurs B et R2.
