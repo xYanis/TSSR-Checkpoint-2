@@ -74,7 +74,7 @@ Q.1.6
 
 Q.1.7 
 
-D'un point de sécurité l'IPV6 est plus sur que l'IPV4 et on peut se passer du DHCP
+D'un point de sécurité l'IPV6 est plus sur que l'IPV4 et on peut se passer du DHCP puisque qu'en IPV6 il configure automatiquement
 
 
 Q.1.8
